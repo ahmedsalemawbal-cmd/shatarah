@@ -2,7 +2,7 @@
 
 // Public address of the live site, used for canonical links, hreflang, Open Graph and the sitemap.
 // Replace it with the real domain before launch, or set SITE_URL when running the build.
-export const SITE_URL = (process.env.SITE_URL || 'https://shatara.example').replace(/\/+$/, '');
+export const SITE_URL = (process.env.SITE_URL || 'https://ahmedsalemawbal-cmd.github.io/shatarah').replace(/\/+$/, '');
 
 // Formspree form ID (the part after https://formspree.io/f/). When empty, the contact and
 // request forms open WhatsApp with the form content already filled in instead.
@@ -16,6 +16,9 @@ export const contact = {
 };
 
 export const whatsappUrl = `https://wa.me/${contact.whatsapp}`;
+
+// Office location (Al-Zumurrud district, Jeddah) — replace with the exact Google Maps pin when available.
+export const mapsUrl = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('حي الزمرد، جدة');
 
 // Social accounts — still placeholders in the approved design.
 export const social = [

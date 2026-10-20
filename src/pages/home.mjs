@@ -1,6 +1,6 @@
 import { esc, icon, dirIcons, ornament } from '../lib.mjs';
 import { layout } from '../layout.mjs';
-import { contact, whatsappUrl, countryCodes, SITE_URL } from '../data/site.mjs';
+import { contact, whatsappUrl, mapsUrl, countryCodes, SITE_URL } from '../data/site.mjs';
 
 const HERO_IMAGES = [
   { src: 'hero-1', w: 848, h: 1264 },
@@ -151,7 +151,7 @@ export function renderHome(ctx) {
     ['whatsapp-logo', list.whatsapp, contact.phone, whatsappUrl],
     ['phone', list.management, `${contact.management[0]} • ${contact.management[1]}`, `tel:${contact.management[0]}`],
     ['envelope-simple', list.email, contact.email, `mailto:${contact.email}`],
-    ['map-pin', list.address, list.addressValue, '#'],
+    ['map-pin', list.address, list.addressValue, mapsUrl],
     ['clock', list.hours, list.hoursValue, '#']
   ]
     .map(
@@ -382,6 +382,8 @@ export function renderHome(ctx) {
     description: t.meta.home.description,
     telephone: '+966533420302',
     email: contact.email,
+    address: { '@type': 'PostalAddress', streetAddress: 'Al-Zumurrud District', addressLocality: 'Jeddah', addressCountry: 'SA' },
+    openingHours: 'Su-Th 09:00-16:00',
     areaServed: 'SA'
   };
   const extraHead = `<link rel="preload" as="image" href="${root}assets/img/hero-1.webp" imagesrcset="${root}assets/img/hero-1-480.webp 480w, ${root}assets/img/hero-1.webp 848w" imagesizes="(max-width: 520px) 92vw, 460px" fetchpriority="high">

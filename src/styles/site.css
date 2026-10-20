@@ -89,13 +89,15 @@ input, select, textarea, button { font-family: inherit; }
 /* Phones: the design's header is wider than a 390px screen (the menu button fell off the edge),
    so the request button moves out of the header there — the fixed bottom bar's "book now"
    button opens the same request page. */
-@media (max-width: 479.98px) {
+@media (max-width: 599.98px) {
   .hcta { display: none; }
   .hbar-in { gap: 12px; }
   .hact { gap: 8px; }
-}
-@media (max-width: 359.98px) {
-  .brand-txt { display: none; }
+  /* The full company name wraps onto two lines instead of pushing the menu button off-screen. */
+  .brand { flex-shrink: 1; min-width: 0; gap: 8px; }
+  .brand-txt { min-width: 0; }
+  .brand-name { font-size: 14px; line-height: 1.2; }
+  .brand-sub { font-size: 10px; }
 }
 
 /* ---------- Breadcrumb & inner page heading ---------- */

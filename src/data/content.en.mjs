@@ -5,33 +5,33 @@ export default {
   lang: 'en',
   dir: 'ltr',
   locale: 'en_US',
-  siteName: 'Shatara Recruitment',
+  siteName: 'Shatara Recruitment Company',
 
   meta: {
     home: {
-      title: 'Shatara Recruitment | Domestic & Professional Worker Recruitment in [City]',
-      description: 'Shatara Recruitment is a licensed Saudi company recruiting housemaids, drivers and professional workers for individuals and businesses, with electronic contracts via Musaned and follow-up until arrival.'
+      title: 'Shatara Recruitment Company | Domestic & Professional Worker Recruitment in Jeddah',
+      description: 'Shatara Recruitment Company is a licensed Saudi company recruiting housemaids, drivers and professional workers for individuals and businesses, with electronic contracts via Musaned and follow-up until arrival.'
     },
     about: {
-      title: 'About Us | Shatara Recruitment',
-      description: 'Shatara Recruitment was founded to offer a different recruitment experience: clear from the first step and reliable to the last, under an official license from the Ministry of Human Resources and Social Development.'
+      title: 'About Us | Shatara Recruitment Company',
+      description: 'Shatara Recruitment Company was founded to offer a different recruitment experience: clear from the first step and reliable to the last, under an official license from the Ministry of Human Resources and Social Development.'
     },
     cvs: {
-      title: 'CVs | Shatara Recruitment',
-      description: 'Browse available CVs of domestic and professional workers by profession, country, age and experience, and book directly with Shatara Recruitment.'
+      title: 'CVs | Shatara Recruitment Company',
+      description: 'Browse available CVs of domestic and professional workers by profession, country, age and experience, and book directly with Shatara Recruitment Company.'
     },
     request: {
-      title: 'New Recruitment Request | Shatara Recruitment',
-      description: 'Fill in your recruitment request and one of the Shatara Recruitment consultants will contact you to complete it.'
+      title: 'New Recruitment Request | Shatara Recruitment Company',
+      description: 'Fill in your recruitment request and one of the Shatara Recruitment Company consultants will contact you to complete it.'
     }
   },
 
   header: {
-    address: '[Address & City]',
+    address: 'Al-Zumurrud District, Jeddah',
     customerService: 'Customer Service:',
-    logoAlt: 'Shatara logo',
-    brandName: 'Shatara Recruitment',
-    brandSub: 'شطارة للاستقدام',
+    logoAlt: 'Shatara Recruitment Company logo',
+    brandName: 'Shatara Recruitment Company',
+    brandSub: 'شركة شطارة للاستقدام',
     nav: {
       home: 'Home',
       about: 'About',
@@ -49,8 +49,8 @@ export default {
   },
 
   footer: {
-    brand: 'Shatara Recruitment',
-    about: 'Shatara Recruitment — a licensed Saudi company recruiting domestic and professional workers. We choose carefully and follow up faithfully.',
+    brand: 'Shatara Recruitment Company',
+    about: 'Shatara Recruitment Company — a licensed Saudi company recruiting domestic and professional workers. We choose carefully and follow up faithfully.',
     quickLinks: 'Quick Links',
     links: {
       home: 'Home',
@@ -66,7 +66,7 @@ export default {
     customerService: 'Customer Service:',
     whatsapp: 'WhatsApp:',
     management: 'Management:',
-    address: '[Address]',
+    address: 'Al-Zumurrud District, Jeddah',
     copyright: '© 2026 Shatara Recruitment Company. All rights reserved.',
     privacy: 'Privacy Policy',
     terms: 'Terms & Conditions',
@@ -81,7 +81,7 @@ export default {
   common: {
     home: 'Home',
     ctaTitle: 'Ready to Start Your Request?',
-    ctaText: 'The Shatara team is ready to answer your questions and help you choose what suits you best.',
+    ctaText: 'The Shatara Recruitment Company team is ready to answer your questions and help you choose what suits you best.',
     whatsappBtn: 'Contact via WhatsApp',
     callUs: 'Call Us:',
     requestBtn: 'Recruitment Request',
@@ -137,8 +137,8 @@ export default {
     about: {
       eyebrow: 'About Us',
       title: 'Your Trusted Recruitment Partner',
-      text: 'Shatara Recruitment is a licensed Saudi company recruiting domestic and professional workers for individuals and businesses, in line with the regulations of the Ministry of Human Resources and Social Development. We believe recruitment is not just a transaction but a decision that affects your family’s comfort and your business’s stability; that is why we choose carefully, explain every step, and stay with you even after the worker arrives.',
-      imageAlt: 'The Shatara team welcoming a Saudi family at the office',
+      text: 'Shatara Recruitment Company is a licensed Saudi company recruiting domestic and professional workers for individuals and businesses, in line with the regulations of the Ministry of Human Resources and Social Development. We believe recruitment is not just a transaction but a decision that affects your family’s comfort and your business’s stability; that is why we choose carefully, explain every step, and stay with you even after the worker arrives.',
+      imageAlt: 'The Shatara Recruitment Company team welcoming a Saudi family at the office',
       more: 'Learn More About Us'
     },
 
@@ -180,7 +180,7 @@ export default {
     },
 
     steps: {
-      title: 'Recruitment Steps with Shatara',
+      title: 'Recruitment Steps with Shatara Recruitment Company',
       text: 'A clear journey from selection to arrival',
       items: [
         { title: 'Choose a CV', text: 'Browse CVs by profession and country, or ask us to recommend someone who suits you.' },
@@ -192,7 +192,7 @@ export default {
     },
 
     why: {
-      title: 'Why Choose Shatara?',
+      title: 'Why Choose Shatara Recruitment Company?',
       items: [
         'An official license and full compliance with the Kingdom’s labor regulations.',
         'Credibility in every dealing; what we promise, we deliver.',
@@ -227,26 +227,26 @@ export default {
       serviceOptions: ['Recruitment for Individuals', 'Business Sector', 'Transfer of Services', 'Labor Leasing', 'General Inquiry'],
       message: 'Your Message',
       submit: 'Send',
-      success: 'Thank you for contacting Shatara! We have received your message and our team will contact you as soon as possible.',
+      success: 'Thank you for contacting Shatara Recruitment Company! We have received your message and our team will contact you as soon as possible.',
       again: 'Send another message',
-      whatsappTitle: 'New message from the Shatara website',
+      whatsappTitle: 'New message from the Shatara Recruitment Company website',
       list: {
         customerService: 'Customer Service',
         whatsapp: 'Mobile / WhatsApp',
         management: 'Management',
         email: 'Email',
         address: 'Address',
-        addressValue: '[ Address & City + Google Maps link ]',
+        addressValue: 'Al-Zumurrud District, Jeddah',
         hours: 'Working Hours',
-        hoursValue: '[ Working hours ]'
+        hoursValue: 'Sun – Thu: 9 AM – 4 PM • Fri & Sat: Closed'
       }
     }
   },
 
   about: {
     title: 'About Us',
-    text: 'Shatara Recruitment was founded to offer a different recruitment experience: clear from the first step and reliable to the last. We operate under an official license from the Ministry of Human Resources and Social Development and serve individuals, families and businesses through the Musaned platform, in cooperation with accredited recruitment offices in several countries. Our name reflects our approach: to us, “Shatara” means smart choices, precise procedures and fast solutions.',
-    photoOffice: 'Image: Shatara office & customer reception',
+    text: 'Shatara Recruitment Company was founded to offer a different recruitment experience: clear from the first step and reliable to the last. We operate under an official license from the Ministry of Human Resources and Social Development and serve individuals, families and businesses through the Musaned platform, in cooperation with accredited recruitment offices in several countries. Our name reflects our approach: to us, “Shatara” means smart choices, precise procedures and fast solutions.',
+    photoOffice: 'Image: Shatara Recruitment Company office & customer reception',
     photoTeam: 'Image: Our team',
     vision: 'Our Vision',
     visionText: 'To be the first choice for families and businesses in the Kingdom when they think of recruitment, through trust, quality and clarity.',
@@ -317,12 +317,12 @@ export default {
     submit: 'Submit Request',
     success: 'Thank you! We have received your request and one of our consultants will contact you soon.',
     browse: 'Browse CVs',
-    stepsTitle: 'Recruitment Steps with Shatara',
+    stepsTitle: 'Recruitment Steps with Shatara Recruitment Company',
     steps: ['Choose a CV', 'Confirm Your Request', 'Contract via Musaned', 'Visa & Travel', 'Arrival & Handover'],
     direct: 'Prefer to contact us directly?',
     customerService: 'Customer Service:',
     privacy: 'We keep your data confidential and share it only to complete your request.',
-    whatsappTitle: 'New recruitment request from the Shatara website',
+    whatsappTitle: 'New recruitment request from the Shatara Recruitment Company website',
     selectedCvLabel: 'CV'
   },
 

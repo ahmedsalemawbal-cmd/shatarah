@@ -44,7 +44,7 @@ npm run preview   # يعرضه على http://localhost:4321
 
 ### بيانات يجب على العميل تعبئتها (موجودة بين [ ] في الموقع)
 - رقم ترخيص وزارة الموارد البشرية، ورقم السجل التجاري.
-- العنوان والمدينة + رابط خرائط Google، وساعات العمل، والمدينة في عنوان الصفحة.
+- رابط موقع المكتب الدقيق على خرائط Google (حالياً الرابط يبحث عن «حي الزمرد، جدة»).
 - مدة الضمان بعد الوصول.
 - روابط حسابات التواصل (إنستغرام، X، سناب شات، تيك توك).
 - ملف الملف التعريفي PDF، وصفحات سياسة الخصوصية والشروط والأحكام، وصفحة «كل الأسئلة»، وصفحات «اقرأ المزيد» للخدمات.
@@ -99,4 +99,4 @@ Before launch, build with the real domain so the sitemap, canonical and share li
 - SEO: per-page titles and descriptions, canonical + hreflang (ar/en), Open Graph image, favicon, `sitemap.xml`, `robots.txt` and Organization structured data.
 
 ### Placeholders the client still needs to provide
-Everything shown in square brackets on the site, plus: license and CR numbers, address + Google Maps link, working hours and the city in the page title, warranty period, social media links, the company-profile PDF, privacy/terms pages, the "All questions" page and service detail pages, the two About-page photos, candidate photos/videos/PDFs, real CVs, a Formspree ID, and a review of the English translation.
+Everything shown in square brackets on the site, plus: license and CR numbers, the exact Google Maps pin for the office (the link currently searches for Al-Zumurrud, Jeddah), warranty period, social media links, the company-profile PDF, privacy/terms pages, the "All questions" page and service detail pages, the two About-page photos, candidate photos/videos/PDFs, real CVs, a Formspree ID, and a review of the English translation.
