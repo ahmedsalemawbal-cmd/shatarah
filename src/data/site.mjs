@@ -9,8 +9,9 @@ export const SITE_URL = (process.env.SITE_URL || 'https://ahmedsalemawbal-cmd.gi
 export const FORMSPREE_ID = process.env.FORMSPREE_ID || '';
 
 export const contact = {
-  phone: '0533420302',
-  whatsapp: '966533420302',
+  phone: '0505627753', // calls (customer service)
+  whatsappDisplay: '0533420302',
+  whatsapp: '966533420302', // international form used in wa.me links
   management: ['0505627753', '0533213031'],
   email: 'shatara.recruitment@gmail.com'
 };

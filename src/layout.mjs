@@ -165,7 +165,7 @@ function footer(ctx) {
       <h2 class="ftr-h">${esc(f.contactTitle)}</h2>
       <div class="ftr-contact">
         <a href="tel:${contact.phone}">${icon('headset')}${esc(f.customerService)} <span dir="ltr">${contact.phone}</span></a>
-        <a href="${whatsappUrl}">${icon('whatsapp-logo')}${esc(f.whatsapp)} <span dir="ltr">${contact.phone}</span></a>
+        <a href="${whatsappUrl}">${icon('whatsapp-logo')}${esc(f.whatsapp)} <span dir="ltr">${contact.whatsappDisplay}</span></a>
         <span>${icon('phone')}${esc(f.management)} <span dir="ltr">${contact.management[0]}</span> • <span dir="ltr">${contact.management[1]}</span></span>
         <a class="ftr-mail" href="mailto:${contact.email}">${icon('envelope-simple')}${contact.email}</a>
         <span>${icon('map-pin')}${esc(f.address)}</span>

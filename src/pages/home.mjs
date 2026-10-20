@@ -148,7 +148,7 @@ export function renderHome(ctx) {
   const list = k.list;
   const contacts = [
     ['headset', list.customerService, contact.phone, `tel:${contact.phone}`],
-    ['whatsapp-logo', list.whatsapp, contact.phone, whatsappUrl],
+    ['whatsapp-logo', list.whatsapp, contact.whatsappDisplay, whatsappUrl],
     ['phone', list.management, `${contact.management[0]} • ${contact.management[1]}`, `tel:${contact.management[0]}`],
     ['envelope-simple', list.email, contact.email, `mailto:${contact.email}`],
     ['map-pin', list.address, list.addressValue, mapsUrl],
@@ -380,7 +380,7 @@ export function renderHome(ctx) {
     logo: `${SITE_URL}/assets/icons/icon-512.png`,
     image: `${SITE_URL}/assets/img/og-image.jpg`,
     description: t.meta.home.description,
-    telephone: '+966533420302',
+    telephone: '+966505627753',
     email: contact.email,
     address: { '@type': 'PostalAddress', streetAddress: 'Al-Zumurrud District', addressLocality: 'Jeddah', addressCountry: 'SA' },
     openingHours: 'Su-Th 09:00-16:00',
