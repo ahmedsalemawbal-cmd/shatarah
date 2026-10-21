@@ -425,12 +425,11 @@ input, select, textarea, button { font-family: inherit; }
 .ab-btn-o { border: 1px solid #CBD9DF; background: #fff; color: #0B4F6C; }
 .ab-btn-o:hover { border-color: #0B4F6C; background: #fff; color: #0B4F6C; }
 .ab-btn-o .i { font-size: 1em; }
-/* The design's tracks were "1.2fr 1fr / 1fr 1fr", which let the logo's intrinsic size stretch the
-   mosaic past the page edge; minmax(0, …) keeps the intended 6:5 box with the logo at 72% of its tile. */
-.ab-mosaic { position: relative; display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) minmax(0, 1fr); gap: 14px; aspect-ratio: 6 / 5; }
-.ab-ph-tall { grid-row: 1 / 3; }
-.ab-logo { border-radius: 22px; background: #0B4F6C; display: flex; align-items: center; justify-content: center; min-height: 0; overflow: hidden; }
-.ab-logo img { height: 72%; width: auto; }
+/* Logo panel in the place of the design's photo mosaic (same 6:5 footprint): the logo alone, large,
+   on petrol with the gold glow and hairline frame used by the hero. */
+.ab-logo { position: relative; aspect-ratio: 6 / 5; border-radius: clamp(22px, 2.6vw, 32px); background: #0B4F6C; background-image: radial-gradient(ellipse at 50% 40%, rgba(188, 162, 78, 0.18), transparent 60%); display: flex; align-items: center; justify-content: center; overflow: hidden; box-shadow: 0 20px 50px rgba(11, 79, 108, 0.16); }
+.ab-logo-frame { position: absolute; inset: clamp(8px, 1vw, 14px); border: 1px solid rgba(188, 162, 78, 0.3); border-radius: clamp(16px, 2vw, 24px); pointer-events: none; }
+.ab-logo img { position: relative; height: 78%; width: auto; }
 .vm { background: #fff; border-top: 1px solid #E3EBEE; border-bottom: 1px solid #E3EBEE; padding: clamp(56px, 7vw, 96px) clamp(20px, 3vw, 40px); }
 .vm-grid { max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 20px; }
 .vm-card { border-radius: 24px; padding: clamp(28px, 3.4vw, 44px); display: flex; flex-direction: column; gap: 16px; }
