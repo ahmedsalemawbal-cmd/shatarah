@@ -264,8 +264,6 @@ export default {
   about: {
     title: 'About Us',
     text: 'Shatara Recruitment Company was founded to offer a different recruitment experience: clear from the first step and reliable to the last. We operate under an official license from the Ministry of Human Resources and Social Development and serve individuals, families and businesses through the Musaned platform, in cooperation with accredited recruitment offices in several countries. Our name reflects our approach: to us, “Shatara” means smart choices, precise procedures and fast solutions.',
-    photoOffice: 'Image: Shatara Recruitment Company office & customer reception',
-    photoTeam: 'Image: Our team',
     vision: 'Our Vision',
     visionText: 'To be the first choice for families and businesses in the Kingdom when they think of recruitment, through trust, quality and clarity.',
     mission: 'Our Mission',

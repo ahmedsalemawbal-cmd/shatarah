@@ -49,7 +49,7 @@ npm run preview   # يعرضه على http://localhost:4321
 - مدة الضمان بعد الوصول.
 - روابط حسابات التواصل (إنستغرام، X، سناب شات، تيك توك).
 - ملف الملف التعريفي PDF، وصفحات سياسة الخصوصية والشروط والأحكام، وصفحة «كل الأسئلة»، وصفحات «اقرأ المزيد» للخدمات.
-- صورتا صفحة «من نحن» (المكتب، فريق العمل)، وصور المرشحين وفيديوهاتهم وملفات PDF للسير الذاتية.
+- صور المرشحين وفيديوهاتهم وملفات PDF للسير الذاتية.
 - السير الذاتية الحقيقية بدلاً من البيانات التجريبية، ومعرّف Formspree.
 - النص الإنجليزي ترجمة جاهزة للمراجعة قبل الاعتماد.
 
@@ -100,4 +100,4 @@ Before launch, build with the real domain so the sitemap, canonical and share li
 - SEO: per-page titles and descriptions, canonical + hreflang (ar/en), Open Graph image, favicon, `sitemap.xml`, `robots.txt` and Organization structured data.
 
 ### Placeholders the client still needs to provide
-Everything shown in square brackets on the site, plus: the Ministry of Human Resources license number (shown in the trust strip on the home page), the office coordinates to pin the embedded map exactly (set in `src/data/site.mjs`; the "Open in Google Maps" button already uses the exact link), a training video of the company's own (the current one carries another account's TikTok watermark — replace `design/assets/training/training-video-original.mp4`, then run `sh tools/prepare-video.sh` and `npm run build`), warranty period, social media links, the company-profile PDF, privacy/terms pages, the "All questions" page and service detail pages, the two About-page photos, candidate photos/videos/PDFs, real CVs, a Formspree ID, and a review of the English translation.
+Everything shown in square brackets on the site, plus: the Ministry of Human Resources license number (shown in the trust strip on the home page), the office coordinates to pin the embedded map exactly (set in `src/data/site.mjs`; the "Open in Google Maps" button already uses the exact link), a training video of the company's own (the current one carries another account's TikTok watermark — replace `design/assets/training/training-video-original.mp4`, then run `sh tools/prepare-video.sh` and `npm run build`), warranty period, social media links, the company-profile PDF, privacy/terms pages, the "All questions" page and service detail pages, candidate photos/videos/PDFs, real CVs, a Formspree ID, and a review of the English translation.

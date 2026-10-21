@@ -29,10 +29,9 @@ export function renderAbout(ctx) {
           <a class="ab-btn ab-btn-o" href="index.html#contact">${esc(t.common.contactUs)}${icon(d.fwd)}</a>
         </div>
       </div>
-      <div class="ab-mosaic">
-        <div class="ph ab-ph-tall"><span class="ph-label">${esc(a.photoOffice)}</span></div>
-        <div class="ab-logo"><img src="${root}assets/img/logo-gold-840.webp" alt="${esc(t.header.logoAlt)}" width="519" height="840"></div>
-        <div class="ph"><span class="ph-label">${esc(a.photoTeam)}</span></div>
+      <div class="ab-logo">
+        <span class="ab-logo-frame"></span>
+        <img src="${root}assets/img/logo-gold-840.webp" alt="${esc(t.header.logoAlt)}" width="519" height="840">
       </div>
     </div>
   </div>
