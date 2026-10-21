@@ -18,8 +18,12 @@ export const contact = {
 
 export const whatsappUrl = `https://wa.me/${contact.whatsapp}`;
 
-// Office location (Al-Zumurrud district, Jeddah) — replace with the exact Google Maps pin when available.
-export const mapsUrl = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('حي الزمرد، جدة');
+// Office location: the exact pin shared by the company (opens Google Maps).
+export const mapsUrl = 'https://maps.app.goo.gl/nXkTs98Fv8rjmnfq8';
+// Embedded map on the contact section. It centres on the district; for the exact pin, replace the
+// query with the office coordinates, e.g. 'q=21.7,39.1' (from the long Google Maps link: @lat,lng).
+export const mapEmbed = lang =>
+  `https://maps.google.com/maps?q=${encodeURIComponent('حي الزمرد، جدة')}&z=15&hl=${lang}&output=embed`;
 
 // Social accounts — still placeholders in the approved design.
 export const social = [

@@ -68,6 +68,18 @@
     });
   });
 
+  /* ---------- Training video: poster + play button, native controls once playing ---------- */
+  $$('[data-video]').forEach(box => {
+    const video = $('video', box);
+    const play = $('[data-play]', box);
+    play.addEventListener('click', () => {
+      video.controls = true;
+      video.play();
+    });
+    video.addEventListener('play', () => { play.hidden = true; });
+    video.addEventListener('ended', () => { play.hidden = false; });
+  });
+
   /* ---------- Forms: Formspree when configured, otherwise WhatsApp ---------- */
   const formspreeId = document.body.dataset.formspree;
   const whatsapp = document.body.dataset.whatsapp;

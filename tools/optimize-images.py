@@ -38,6 +38,12 @@ save_webp(Image.open(os.path.join(SRC, "images", "hero-3.webp")).convert("RGB"),
 for n in ["hero-3", "about-team"] + [f"job-{i}" for i in range(1, 10)]:
     shutil.copyfile(os.path.join(SRC, "images", n + ".webp"), os.path.join(IMG, n + ".webp"))
 
+# Training photos (design/assets/training/): shown about 300px wide, so 800w covers 2x screens.
+for n in ("training-1", "training-2"):
+    im = Image.open(os.path.join(SRC, "training", n + ".jpg")).convert("RGB")
+    save_webp(im, n + ".webp", width=800, quality=78)
+    save_webp(im, n + "-480.webp", width=480, quality=78)
+
 # Logos keep their original transparent margin so they render at exactly the design's size.
 for color in ("gold", "white"):
     im = Image.open(os.path.join(SRC, f"logo-{color}.png")).convert("RGBA")

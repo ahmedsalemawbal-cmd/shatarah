@@ -191,6 +191,23 @@ export default {
       ]
     },
 
+    training: {
+      eyebrow: 'Training & Preparation',
+      title: 'Trained Before They Reach Your Home',
+      text: 'Careful selection alone is not enough. Before travelling, workers go through hands-on training and preparation programs at our accredited partner offices that build their household skills and introduce them to Saudi culture and customs, so they start in your home with confidence from day one.',
+      items: [
+        'Practical household skills: cooking, using home appliances, cleaning and organizing.',
+        'An introduction to Saudi culture and customs, and etiquette with family members.',
+        'Awareness sessions on rights, duties and contract terms before travel.',
+        'A readiness assessment before travel is approved, so the worker arrives confident and prepared.'
+      ],
+      cta: 'Book a Trained Worker Now',
+      video: 'Video of hands-on cooking and home-appliance training',
+      play: 'Play video',
+      photo1: 'Pre-departure awareness and preparation session for workers',
+      photo2: 'Workers after completing a preparation session'
+    },
+
     why: {
       title: 'Why Choose Shatara Recruitment Company?',
       items: [
@@ -230,6 +247,8 @@ export default {
       success: 'Thank you for contacting Shatara Recruitment Company! We have received your message and our team will contact you as soon as possible.',
       again: 'Send another message',
       whatsappTitle: 'New message from the Shatara Recruitment Company website',
+      mapTitle: 'Shatara Recruitment Company office location on the map',
+      mapOpen: 'Open in Google Maps',
       list: {
         customerService: 'Customer Service',
         whatsapp: 'Mobile / WhatsApp',

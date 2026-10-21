@@ -8,12 +8,11 @@ export const esc = value =>
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;');
 
-// Inline Phosphor icon. `name` is the regular weight; prefix it with "duo:" for the duotone weight.
+// Inline Phosphor icon. `name` is the regular weight; prefix it with "duo:" or "fill:" for those weights.
 // Icons are 1em squares that follow the surrounding font-size and colour, like the icon font did.
 export function icon(name, cls = '') {
-  const duo = name.startsWith('duo:');
-  const key = duo ? name.slice(4) : name;
-  const paths = (duo ? ICONS.duotone : ICONS.regular)[key];
+  const [weight, key] = name.includes(':') ? name.split(':') : ['regular', name];
+  const paths = ICONS[weight === 'duo' ? 'duotone' : weight]?.[key];
   if (!paths) throw new Error(`Unknown icon: ${name}`);
   return `<svg class="i${cls ? ' ' + cls : ''}" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false">${paths}</svg>`;
 }

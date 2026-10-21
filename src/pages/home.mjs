@@ -1,6 +1,6 @@
 import { esc, icon, dirIcons, ornament } from '../lib.mjs';
 import { layout } from '../layout.mjs';
-import { contact, whatsappUrl, mapsUrl, countryCodes, SITE_URL } from '../data/site.mjs';
+import { contact, whatsappUrl, mapsUrl, mapEmbed, countryCodes, SITE_URL } from '../data/site.mjs';
 
 const HERO_IMAGES = [
   { src: 'hero-1', w: 848, h: 1264 },
@@ -125,6 +125,19 @@ export function renderHome(ctx) {
           </div>`
     )
     .join('\n          ');
+
+  const tr = c.training;
+  const trainingIcons = ['cooking-pot', 'users-three', 'file-text', 'seal-check'];
+  const trainingItems = tr.items
+    .map(
+      (x, i) => `<li class="tr-item">
+            <span class="tr-ic"><span class="tr-ic-frame"></span>${icon('duo:' + trainingIcons[i])}</span>
+            <p>${esc(x)}</p>
+          </li>`
+    )
+    .join('\n          ');
+  const trainingPhoto = (n, alt) =>
+    `<img class="tr-photo" src="${root}assets/img/training-${n}.webp" srcset="${root}assets/img/training-${n}-480.webp 480w, ${root}assets/img/training-${n}.webp 800w" sizes="(max-width: 600px) 50vw, 320px" width="800" height="600" alt="${esc(alt)}" loading="lazy">`;
 
   const why = c.why.items
     .map(
@@ -296,6 +309,37 @@ export function renderHome(ctx) {
   </div>
 </section>
 
+<section id="training" class="training">
+  <div class="training-grid">
+    <div class="training-txt">
+      <span class="eyebrow"><span class="dia"></span>${esc(tr.eyebrow)}</span>
+      <h2 class="h2 h2-lh">${esc(tr.title)}</h2>
+      <p class="about-p">${esc(tr.text)}</p>
+      <ul class="tr-list">
+          ${trainingItems}
+      </ul>
+      <div class="btn-row">
+        <a class="btn-petrol" href="request.html">${esc(tr.cta)}${icon(d.fwd)}</a>
+      </div>
+    </div>
+    <div class="tr-media">
+      <div class="tr-video-wrap">
+        <span class="tr-video-line"></span>
+        <div class="tr-video" data-video>
+          <video preload="none" playsinline poster="${root}assets/img/training-poster.webp" width="576" height="1024" aria-label="${esc(tr.video)}">
+            <source src="${root}assets/video/training.mp4" type="video/mp4">
+          </video>
+          <button class="tr-play" type="button" data-play aria-label="${esc(tr.play)}">${icon('fill:play')}</button>
+        </div>
+      </div>
+      <div class="tr-photos">
+        ${trainingPhoto(1, tr.photo1)}
+        ${trainingPhoto(2, tr.photo2)}
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="why">
   <div class="why-grid">
     <div class="why-head">
@@ -367,6 +411,10 @@ export function renderHome(ctx) {
       <div class="cl-list">
           ${contacts}
       </div>
+    </div>
+    <div class="map-card">
+      <iframe class="map-frame" src="${mapEmbed(t.lang)}" title="${esc(k.mapTitle)}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      <a class="map-open" href="${mapsUrl}" target="_blank" rel="noopener">${icon('map-pin')}${esc(k.mapOpen)}</a>
     </div>
   </div>
 </section>
