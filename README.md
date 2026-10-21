@@ -43,7 +43,7 @@ npm run preview   # يعرضه على http://localhost:4321
 قبل الإطلاق ضع رابط الموقع الحقيقي: `SITE_URL=https://example.com npm run build` (يُستخدم في خريطة الموقع وروابط المشاركة).
 
 ### بيانات يجب على العميل تعبئتها (موجودة بين [ ] في الموقع)
-- رقم ترخيص وزارة الموارد البشرية، ورقم السجل التجاري.
+- رقم ترخيص وزارة الموارد البشرية (يظهر في شريط الثقة أعلى الصفحة الرئيسية).
 - إحداثيات المكتب لتثبيت الدبوس داخل الخريطة المضمّنة (الخريطة الآن على «حي الزمرد، جدة»، وزر «افتح الموقع» يفتح الرابط الدقيق). تُعدَّل في `src/data/site.mjs`.
 - فيديو التدريب الحالي عليه علامة TikTok لحساب آخر (@alkhas2030)؛ يُفضَّل استبداله بفيديو خاص بالشركة: ضعه مكان `design/assets/training/training-video-original.mp4` ثم شغّل `sh tools/prepare-video.sh` و`npm run build`.
 - مدة الضمان بعد الوصول.
@@ -100,4 +100,4 @@ Before launch, build with the real domain so the sitemap, canonical and share li
 - SEO: per-page titles and descriptions, canonical + hreflang (ar/en), Open Graph image, favicon, `sitemap.xml`, `robots.txt` and Organization structured data.
 
 ### Placeholders the client still needs to provide
-Everything shown in square brackets on the site, plus: license and CR numbers, the office coordinates to pin the embedded map exactly (set in `src/data/site.mjs`; the "Open in Google Maps" button already uses the exact link), a training video of the company's own (the current one carries another account's TikTok watermark — replace `design/assets/training/training-video-original.mp4`, then run `sh tools/prepare-video.sh` and `npm run build`), warranty period, social media links, the company-profile PDF, privacy/terms pages, the "All questions" page and service detail pages, the two About-page photos, candidate photos/videos/PDFs, real CVs, a Formspree ID, and a review of the English translation.
+Everything shown in square brackets on the site, plus: the Ministry of Human Resources license number (shown in the trust strip on the home page), the office coordinates to pin the embedded map exactly (set in `src/data/site.mjs`; the "Open in Google Maps" button already uses the exact link), a training video of the company's own (the current one carries another account's TikTok watermark — replace `design/assets/training/training-video-original.mp4`, then run `sh tools/prepare-video.sh` and `npm run build`), warranty period, social media links, the company-profile PDF, privacy/terms pages, the "All questions" page and service detail pages, the two About-page photos, candidate photos/videos/PDFs, real CVs, a Formspree ID, and a review of the English translation.

@@ -179,7 +179,6 @@ function footer(ctx) {
         <a href="#">${esc(f.privacy)}</a>
         <a href="#">${esc(f.terms)}</a>
         <span>${esc(f.cr)}</span>
-        <span>${esc(f.license)}</span>
       </div>
     </div>
   </div>
