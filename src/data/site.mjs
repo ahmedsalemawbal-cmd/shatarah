@@ -1,8 +1,8 @@
 // Company contact details and site-wide settings, shared by the Arabic and English pages.
 
 // Public address of the live site, used for canonical links, hreflang, Open Graph and the sitemap.
-// Replace it with the real domain before launch, or set SITE_URL when running the build.
-export const SITE_URL = (process.env.SITE_URL || 'https://ahmedsalemawbal-cmd.github.io/shatarah').replace(/\/+$/, '');
+// Override with SITE_URL when running the build (e.g. for a staging copy).
+export const SITE_URL = (process.env.SITE_URL || 'https://shatararecruitment.com').replace(/\/+$/, '');
 
 // Formspree form ID (the part after https://formspree.io/f/). When empty, the contact and
 // request forms open WhatsApp with the form content already filled in instead.
